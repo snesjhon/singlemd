@@ -32,11 +32,9 @@ module.exports = (args) => {
 	const md_style = args.style;
 	const md_output = args.output; 
 	const md_title = args.title;
-	const md_ext = path.extname(md_path);
-	const md_styleext = path.extname(md_style);
 
 	// If file exists
-	if(fs.existsSync(md_path) && (md_ext === ".md" || md_ext === ".markdown")) {
+	try{
 		fs.readFile(__dirname + '/../utils/template.html', 'utf8', (err, html) => {
 			const $ = cheerio.load(html);
 			// Append title
@@ -48,17 +46,17 @@ module.exports = (args) => {
 				$('#singlemd').append(result);
 
 				// Create CSS or File
-				if(fs.existsSync(md_style) && (md_styleext === ".css")){
+				try {
 					fs.readFile(md_style, (err, data) => {
 						$('#md-style').append(data.toString());
 						md_export(md_output, $.html());
 					});
-				} else {
+				} catch(e){
 					md_export(md_output, $.html());
 				}
 			});
 		});
-	} else {
+	} catch(e){
 		return error('File Not Allowed or Does Not Exist', true);
 	}
 }

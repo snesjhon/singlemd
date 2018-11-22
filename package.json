@@ -1,6 +1,6 @@
 {
   "name": "singlemd",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Make a website with just a single Markdown file",
   "main": "index.js",
   "bin": {
