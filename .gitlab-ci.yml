@@ -11,6 +11,6 @@ pages:
   - mkdir public && mv index.html ./public
   artifacts:
     paths:
-    - index.html
+    - public
   only:
     - master
