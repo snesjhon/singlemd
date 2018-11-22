@@ -1,0 +1,15 @@
+image: node:8.12.0 
+
+pages:
+  cache:
+    paths:
+    - node_modules/
+
+  script:
+  - npm install singlemd -g
+  - singlemd -i README.md -o index.html
+  artifacts:
+    paths:
+    - index.html
+  only:
+    - master
