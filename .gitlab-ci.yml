@@ -7,8 +7,8 @@ pages:
 
   script:
   - npm install singlemd -g
-  - singlemd --input ./README.md --output index.html --style ./style.css
-  - mkdir public && mv index.html ./public
+  - singlemd --input ./README.md --output index.html --style ./public/style.css
+  - mv index.html ./public
   artifacts:
     paths:
     - public
