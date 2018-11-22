@@ -7,7 +7,7 @@ pages:
 
   script:
   - npm install singlemd -g
-  - singlemd -i ./README.md -o index.html
+  - singlemd --input ./README.md --output index.html --style ./style.css
   artifacts:
     paths:
     - index.html
