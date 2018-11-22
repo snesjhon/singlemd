@@ -1,0 +1,24 @@
+{
+  "name": "singlemd",
+  "version": "0.0.1",
+  "description": "Make a website with just a single Markdown file",
+  "main": "index.js",
+  "bin": {
+    "singlemd": "./bin/singlemd"
+  },
+  "keywords": [
+    "markdown",
+    "static site generator",
+    "gitlab pages"
+  ],
+  "author": "@snesjhon",
+  "license": "MIT",
+  "repository": "gitlab:snesjhon/singlemd",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "highlight.js": "^9.13.1",
+    "markdown-it": "^8.4.2",
+    "minimist": "^1.2.0",
+    "yargs": "^12.0.2"
+  }
+}
