@@ -8,8 +8,6 @@
 
 <p>
   Make a website with just a single Markdown file
-  <br>
-  <small><em>Just worry about your content, not your environment.</em></small>
 </p>
 </div>
 
