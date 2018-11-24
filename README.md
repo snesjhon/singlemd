@@ -21,6 +21,7 @@
 
 > _why can't a README.md just be my website._
  
+---
 
 ### Install
 
