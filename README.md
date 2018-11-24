@@ -13,6 +13,15 @@
 </p>
 </div>
 
+
+### Motivation
+* There are [many](https://jekyllrb.com/), [many](https://www.gatsbyjs.org/), [many](https://gohugo.io/) solutions to create a static website but I've found that the overall setup, development, deployment to be overboard for just a simple site. 
+
+* I also didn't want to write HTML when most of my content could be done in Markdown. I liked the simplicity of writing a README.md file.
+
+> _why can't a README.md just be my website._
+ 
+
 ### Install
 
 ```
@@ -44,6 +53,10 @@ singlemd <options>
 --help, -h ......... show help menu for a command
 ```
 
+### Demo
+This README.md is also this [website](https://snesjhon.gitlab.io/singlemd). 
+
+
 ---
 
 ### Usage with Gitlab Pages
@@ -68,14 +81,6 @@ pages:
   only:
     - master
 ```
-
-### Motivation
-* Although there are [many](https://jekyllrb.com/), [many](https://www.gatsbyjs.org/), [many](https://gohugo.io/), solutions to create a static website, I've found that the
-overall setup, development, deployment cycle is cumbersome. Almost to the point that by the time I 
-end up setting everything thing up I'm losing sight of why I started trying to write a blog in the first place.
-
-* I just wanted a simple way to output a markdown the way I saw it rendered in a README file. 
-  Why can't that just be my website. 
 
 
 ### Other Options
