@@ -3,13 +3,17 @@
 <h1>
   ℳ
   <br/>
+  <em>
   singlemd
+  </em>
 </h1>
 
 <p>
   Make a website with just a single Markdown file
 </p>
 </div>
+
+<br/>
 
 
 ### Motivation
