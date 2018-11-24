@@ -19,9 +19,9 @@
 ### Motivation
 * There are [many](https://jekyllrb.com/), [many](https://www.gatsbyjs.org/), [many](https://gohugo.io/) solutions to create a static website but I've found that the overall setup, development, deployment to be overboard for just a simple site. 
 
-* I also didn't want to write HTML when most of my content could be done in Markdown. I liked the simplicity of writing a README.md file.
+* I also didn't want to write HTML when most of my content could be done in Markdown. I liked the simplicity of writing a README file.
 
-> _why can't a README.md just be my website._
+> _why can't a README just be my website._
  
 ---
 
