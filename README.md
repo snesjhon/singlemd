@@ -48,17 +48,17 @@ singlemd --input ./README.md --output index.html --style ./style.css
 ### Options
 ```
 singlemd <options>
---input, -i ........ markdown file path (.md, .markdown)
---output, -o ....... output path. Default 'index.html'
---style, -s ........ css path to add in template (optional)
---title, -t ........ add custom title (optional)
---version, -v ...... show package version
---help, -h ......... show help menu for a command
+--input ........ markdown file path (.md, .markdown)
+--output ....... output path. Default 'index.html'
+--style ........ css path to add in template (optional)
+--title ........ add custom title (optional)
+--version ...... show package version
+--help ......... show help menu for a command
 ```
 
-### Demo
-This README.md is also this [website](https://snesjhon.gitlab.io/singlemd). 
-
+### Examples
+* This [README.md](https://gitlab.com/snesjhon/singlemd/blob/master/README.md) is also this [website](https://snesjhon.gitlab.io/singlemd). 
+* [https://snesjhon.com](https://snesjhon.com)
 
 ---
 
@@ -76,7 +76,7 @@ pages:
 
   script:
   - npm install singlemd -g
-  - singlemd --input README.md --output index.html --style style.css
+  - singlemd --input ./README.md --output index.html --style ./style.css
   - mkdir ./public && mv index.html ./public
   artifacts:
     paths:
@@ -94,3 +94,9 @@ pages:
   * The biggest inspiration for writing this package, however they don't provide a full website output.
   * The showdownjs CLI provides a way to convert your files from markdown, however they output solely
     the html content, but nothing surrounding it. So adding a GFM or any custom styles is not possible. 
+
+## TODO
+* Add option for favicon
+* Support Multiple Themes (right now only GFM)
+* Support CLI abbreviations
+* Support for Github Actions
